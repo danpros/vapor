@@ -1,6 +1,7 @@
 <article class="post full">
     <?php if (login()) { echo tab($p); } ?> 
     <header>
+        <div class="post-meta tags">Posted in <?php echo $p->category;?></div>
         <?php if (!empty($p->link)) { ?>
             <div class="featured featured-link">
                 <h1 class="post-title"><a target="_blank" href="<?php echo $p->link ?>"><?php echo $p->title ?> <i class="fa fa-external-link"></i></a></h1>
