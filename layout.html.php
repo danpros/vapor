@@ -9,6 +9,8 @@
     <link href="<?php echo publisher() ?>" rel="publisher" /><?php endif; ?>
     <link rel="stylesheet" type="text/css" href="<?php echo site_url();?>themes/vapor/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="<?php echo site_url();?>themes/vapor/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo site_url();?>themes/vapor/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300">
 </head>
 <body class="home-template">
 <?php if (facebook()) { echo facebook(); } ?>
