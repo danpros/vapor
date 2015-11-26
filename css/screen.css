@@ -363,7 +363,7 @@ nav.menu li {
 }
 @media only screen and (min-width: 320px) and (max-width: 662px) {
   nav.menu li {
-  display: block;
+    display: inline-block;
   }
 }
 nav.pagination li:first-child {
