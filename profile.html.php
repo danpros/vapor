@@ -28,6 +28,7 @@
         } ?>    
     </section>
 </article>
+<?php if (!empty($posts)) { ?>
 <?php if (!empty($pagination['prev']) || !empty($pagination['next'])): ?>
 <nav class="pagination" role="pagination">
     <?php if (!empty($pagination['prev'])): ?>
@@ -39,3 +40,4 @@
     <?php endif; ?>
 </nav>
 <?php endif; ?>
+<?php } ?>

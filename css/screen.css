@@ -628,3 +628,7 @@ img {
   display: inline-block;
   margin: 0 5px;
 }
+
+.subnav {
+  display:none;
+}
