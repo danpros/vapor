@@ -31,7 +31,7 @@
         </div>
     <?php } ?>
     <section class="post-excerpt">
-        <p><?php echo get_teaser($p->body) ?></p>
+        <?php echo get_teaser($p->body, $p->url); ?>
         <?php if (config('teaser.type') === 'trimmed'):?><p class="readmore"><a href="<?php echo $p->url; ?>">Read this article <i class="fa fa-chevron-circle-right"></i></a></p><?php endif;?>
     </section>
 </article>
