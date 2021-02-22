@@ -9,7 +9,7 @@
         <?php } else { ?>
             <h1 class="post-title"><?php echo $p->title; ?></h1>
         <?php } ?>
-        <div class="post-meta"><time><?php echo date('l, F d, Y', $p->date) ?></time></div>
+        <div class="post-meta"><time><?php echo format_date($p->date); ?></time></div>
     </header>
     <?php if (!empty($p->image)) { ?>
         <div class="featured featured-image">

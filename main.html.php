@@ -8,7 +8,7 @@
         <?php } else { ?>
             <h2 class="post-title"><a href="<?php echo $p->url; ?>"><?php echo $p->title; ?></a></h2>
         <?php } ?>
-        <div class="post-meta"><time><?php echo date('l, F d, Y', $p->date) ?></time></div>
+        <div class="post-meta"><time><?php echo format_date($p->date); ?></time></div>
     </header>
     <?php if (!empty($p->image)) { ?>
         <div class="featured featured-image">
@@ -32,7 +32,7 @@
     <?php } ?>
     <section class="post-excerpt">
         <?php echo get_teaser($p->body, $p->url); ?>
-        <?php if (config('teaser.type') === 'trimmed'):?><p class="readmore"><a href="<?php echo $p->url; ?>">Read this article <i class="fa fa-chevron-circle-right"></i></a></p><?php endif;?>
+        <?php if (config('teaser.type') === 'trimmed'):?><p class="readmore"><a href="<?php echo $p->url; ?>"><?php echo config('read.more'); ?> <i class="fa fa-chevron-circle-right"></i></a></p><?php endif;?>
     </section>
 </article>
 <?php endforeach;?>
