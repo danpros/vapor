@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <article class="post full">
     <?php if (login()) { echo tab($p); } ?> 
     <header>
@@ -45,9 +46,6 @@
             </a>
             <a onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" href="https://www.facebook.com/sharer.php?u=<?php echo $p->url ?>&t=<?php echo $p->title ?>">
             <i class="fa fa-2x fa-fw fa-facebook-square"></i> <span class="hidden">Facebook</span>
-            </a>
-            <a onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" href="https://plus.google.com/share?url=<?php echo $p->url ?>">
-            <i class="fa fa-2x fa-fw fa-google-plus-square"></i> <span class="hidden">Google+</span>
             </a>
         </div>
         <div class="clear"></div>

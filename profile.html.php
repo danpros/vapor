@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <article class="post profile">
     <header>
         <h1 class="post-title"><?php echo $name;?></h1>

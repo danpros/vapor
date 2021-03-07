@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <article class="post page">
     <?php if (login()) { echo tab($p); } ?> 
     <header>
