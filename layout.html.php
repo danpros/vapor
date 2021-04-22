@@ -34,7 +34,7 @@
         <div class="inner">
             <section class="footer-description"><?php echo blog_description();?></section>            
             <section class="copyright"><?php echo copyright();?></section>
-            <section>Design by <a target="_blank" href="http://sethlilly.com/">Seth Lilly</a></section>
+            <section>Design by <a target="_blank" href="http://sethlilly.com/" rel="nofollow">Seth Lilly</a></section>
         </div>
     </footer>
     <?php if (analytics()): ?><?php echo analytics() ?><?php endif; ?>
