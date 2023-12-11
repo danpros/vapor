@@ -1,6 +1,6 @@
 <?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <!DOCTYPE html>
-<html lang="<?php echo str_replace('_', '-', config('language'));?>">
+<html lang="<?php echo blog_language();?>">
 <head>
     <?php echo head_contents();?>
     <title><?php echo $title;?></title>
@@ -8,16 +8,16 @@
     <link rel="canonical" href="<?php echo $canonical; ?>" />
     <?php if (publisher()): ?>
     <link href="<?php echo publisher() ?>" rel="publisher" /><?php endif; ?>
-    <link rel="stylesheet" type="text/css" href="<?php echo site_url();?>themes/vapor/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo site_url();?>themes/vapor/css/screen.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo site_url();?>themes/vapor/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/screen.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300">
 </head>
 <body class="home-template">
 <?php if (facebook()) { echo facebook(); } ?>
 <?php if (login()) { toolbar(); } ?>
     <header id="site-head">
-        <a id="blog-logo" href="<?php echo site_url();?>"><div class="bloglogo" style="background: url(<?php echo site_url();?>themes/vapor/images/avatar.png)"></div></a>
+        <a id="blog-logo" href="<?php echo site_url();?>"><div class="bloglogo" style="background: url(<?php echo theme_path();?>images/avatar.png)"></div></a>
         <?php if(is_index()) {?>
 			<h1 class="blog-title"><a href="<?php echo site_url();?>"><?php echo blog_title();?></a></h1>
 		<?php } else { ?>
