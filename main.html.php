@@ -40,11 +40,11 @@
 <?php if (!empty($pagination['prev']) || !empty($pagination['next'])): ?>
 <nav class="pagination" role="pagination">
     <?php if (!empty($pagination['prev'])): ?>
-        <a class="newer-posts" href="?page=<?php echo $page - 1 ?>"><i class="fa fa-chevron-circle-left"></i> Newer</a>
+        <a class="newer-posts" href="?page=<?php echo $page - 1 ?>"><i class="fa fa-chevron-circle-left"></i> <?php echo i18n('Newer');?></a>
     <?php endif; ?>
     <?php echo $pagination['pagenum'];?>
     <?php if (!empty($pagination['next'])): ?>
-        <a class="older-posts" href="?page=<?php echo $page + 1 ?>">Older <i class="fa fa-chevron-circle-right"></i></a>
+        <a class="older-posts" href="?page=<?php echo $page + 1 ?>"><?php echo i18n('Older');?> <i class="fa fa-chevron-circle-right"></i></a>
     <?php endif; ?>
 </nav>
 <?php endif; ?>

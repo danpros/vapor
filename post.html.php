@@ -2,7 +2,7 @@
 <article class="post full">
     <?php if (login()) { echo tab($p); } ?> 
     <header>
-        <div class="post-meta tags">Posted in <?php echo $p->category;?></div>
+        <div class="post-meta tags"><?php echo i18n('Posted_in');?> <?php echo $p->category;?></div>
         <?php if (!empty($p->link)) { ?>
             <div class="featured featured-link">
                 <h1 class="post-title"><a target="_blank" href="<?php echo $p->link ?>"><?php echo $p->title ?> <i class="fa fa-external-link"></i></a></h1>
@@ -37,10 +37,9 @@
     </section>
     <section class="share">
         <div class="A">
-            <p class="tag">Tagged: <?php echo $p->tag;?></p>
+            <p class="tag"><?php echo i18n('Tags');?>: <?php echo $p->tag;?></p>
         </div>
         <div class="B">
-            <p class="info prompt">Share: </p>
             <a onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" href="https://twitter.com/share?url=<?php echo $p->url ?>&text=<?php echo $p->title ?>">
             <i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span>
             </a>
@@ -53,7 +52,7 @@
     <footer class="post-footer">
         <section class="author">
             <div style="background: url(<?php echo theme_path();?>images/avatar.png)" class="authorimage"></div>
-            <p class="attr">Author</p>
+            <p class="attr"><?php echo i18n('Author');?></p>
             <h4><a href="<?php echo $p->authorUrl;?>"><?php echo $author->name;?></a></h4>
             <?php echo $author->about;?>
         </section>
@@ -77,11 +76,11 @@
     <?php if (!empty($prev) || !empty($next)): ?>
         <nav class="pagination post" role="pagination">
             <?php if (!empty($next)): ?>
-                <a class="newer-posts" href="<?php echo($next['url']); ?>"><i class="fa fa-chevron-circle-left"></i> Next Post</a>
+                <a class="newer-posts" href="<?php echo($next['url']); ?>"><i class="fa fa-chevron-circle-left"></i> <?php echo i18n('Next_post');?></a>
             <?php endif; ?>
             &nbsp;
             <?php if (!empty($prev)): ?>
-                <a class="older-posts" href="<?php echo($prev['url']); ?>">Previous Post <i class="fa fa-chevron-circle-right"></i></a>
+                <a class="older-posts" href="<?php echo($prev['url']); ?>"><?php echo i18n('Prev_post');?> <i class="fa fa-chevron-circle-right"></i></a>
             <?php endif; ?>
         </nav>
     <?php endif; ?>
