@@ -6,6 +6,7 @@
     <title><?php echo $title;?></title>
     <meta name="description" content="<?php echo $description; ?>"/>
     <link rel="canonical" href="<?php echo $canonical; ?>" />
+    <?php echo $metatags;?>
     <link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/normalize.css">
     <link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/screen.css">
     <link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/font-awesome.min.css">
