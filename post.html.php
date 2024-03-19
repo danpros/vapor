@@ -35,6 +35,11 @@
     <section class="post-content">
         <?php echo $p->body; ?>
     </section>
+    <section class="related" style="margin-top:30px;">
+    <style>.related ul {margin-top:5px;}</style>
+        <p style="margin-bottom:0;"><strong><?php echo i18n("related_posts");?></strong></p>
+        <?php echo get_related($p->related);?>
+    </section>
     <section class="share">
         <div class="A">
             <p class="tag"><?php echo i18n('Tags');?>: <?php echo $p->tag;?></p>
