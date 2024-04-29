@@ -56,7 +56,7 @@
     </section>
     <footer class="post-footer">
         <section class="author">
-            <div style="background: url(<?php echo theme_path();?>images/avatar.png)" class="authorimage"></div>
+            <div style="background: url(<?php echo $author->avatar;?>)" class="authorimage"></div>
             <p class="attr"><?php echo i18n('Author');?></p>
             <h4><a href="<?php echo $p->authorUrl;?>"><?php echo $author->name;?></a></h4>
             <?php echo $author->about;?>
