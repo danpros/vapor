@@ -7,7 +7,11 @@
     <link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/normalize.css">
     <link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/screen.css">
     <link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300">
+	<link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/open-sans-condensed.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo site_url();?>system/resources/css/open-sans.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo site_url();?>system/resources/css/merriweather.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo theme_path();?>css/roboto-slab.css">
+	
 </head>
 <body class="home-template">
 <?php if (facebook()) { echo facebook(); } ?>
